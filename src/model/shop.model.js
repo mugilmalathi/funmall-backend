@@ -6,7 +6,7 @@ const shopSchema = new mongoose.Schema({
     price: {type:Number},
     image: {type:String}
 },{
-    Versionkey: false,
+    versionkey: false,
     timestamps: true
 })
 
