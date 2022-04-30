@@ -21,7 +21,7 @@ router.get("/shops", async(req, res)=>{
         return res.status(201).send(shop);
     }catch(err)
     {
-        return res.status(500).send({message:err.message})
+        return res.status(500).send(err)
     }
 })
 
