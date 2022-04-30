@@ -12,7 +12,7 @@ const shopController = require("./controller/shop.controller");
 
 app.use("/", shopController);
 
-app.listen(PORT, async(req, res)=>{
+app.listen(PORT, async()=>{
     try{
         await connect();
         console.log("Connected DB..!")
