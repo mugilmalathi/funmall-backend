@@ -8,6 +8,10 @@ const connect = require("./config/db")
 
 const PORT = process.env.PORT;
 
+const shopController = require("./controller/shop.controller");
+
+app.use("/", shopController);
+
 app.listen(PORT, async(req, res)=>{
     try{
         await connect();
