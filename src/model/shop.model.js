@@ -10,4 +10,4 @@ const shopSchema = new mongoose.Schema({
     timestamps: true
 })
 
-module.exports = mongoose.model("shop", shopSchema)
+module.exports = mongoose.model("shops", shopSchema)
