@@ -10,7 +10,7 @@ const PORT = process.env.PORT;
 
 const shopController = require("./controller/shop.controller");
 
-app.use("/", shopController);
+app.use("/shops", shopController);
 
 app.listen(PORT, async()=>{
     try{
